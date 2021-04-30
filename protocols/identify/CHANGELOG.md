@@ -1,4 +1,4 @@
-# 0.29.0 [unreleased]
+# 0.29.0 [2021-04-13]
 
 - Add support for configurable automatic push to connected peers
   on listen addr changes. Disabled by default.
@@ -7,6 +7,10 @@
 - Implement the `/ipfs/id/push/1.0.0` protocol.
   cf. https://github.com/libp2p/specs/tree/master/identify#identifypush
   [PR 1999](https://github.com/libp2p/rust-libp2p/pull/1999)
+
+- Emit `IdentifyEvent::Pushed` event after successfully pushing identification
+  information to peer [PR
+  2030](https://github.com/libp2p/rust-libp2p/pull/2030).
 
 # 0.28.0 [2021-03-17]
 
