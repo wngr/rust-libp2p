@@ -1,0 +1,19 @@
+[package]
+name = "libp2p-streaming"
+edition = "2018"
+description = "Generic Streaming Protocol"
+version = "0.1.0"
+authors = ["Parity Technologies <admin@parity.io>"]
+license = "MIT"
+repository = "https://github.com/libp2p/rust-libp2p"
+keywords = ["peer-to-peer", "libp2p", "networking"]
+categories = ["network-programming", "asynchronous"]
+
+[dependencies]
+async-trait = "0.1"
+futures = "0.3.1"
+libp2p-core = { version = "0.28.0", path = "../../core" }
+libp2p-swarm = { version = "0.29.0", path = "../../swarm" }
+log = "0.4.11"
+lru = "0.6"
+smallvec = "1.6.1"
